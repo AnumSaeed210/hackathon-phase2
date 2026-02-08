@@ -107,11 +107,11 @@ export function SignInForm({
         Sign In
       </Button>
 
-      <p className="text-center text-sm text-gray-600">
+      <p className="text-center text-sm text-text-secondary">
         Don&apos;t have an account?{" "}
         <Link
           href="/signup"
-          className="font-medium text-violet-dark hover:text-violet"
+          className="font-medium text-primary-dark hover:text-primary"
         >
           Sign Up
         </Link>

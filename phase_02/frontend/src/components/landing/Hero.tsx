@@ -27,15 +27,15 @@ export function Hero({
   return (
     <section
       className="relative min-h-screen flex flex-col items-center justify-center px-4 py-16 overflow-hidden"
-      style={{ backgroundColor: "#f5f5f5" }}
+      style={{ backgroundColor: "#F5EDE4" }}
     >
       <div
         className="absolute top-20 right-10 w-72 h-72 rounded-full blur-3xl opacity-40"
-        style={{ backgroundColor: "#c68dff" }}
+        style={{ backgroundColor: "#B49BC4" }}
       ></div>
       <div
         className="absolute bottom-32 left-10 w-80 h-80 rounded-full blur-3xl opacity-40"
-        style={{ backgroundColor: "#cbe857" }}
+        style={{ backgroundColor: "#F4A460" }}
       ></div>
 
       <div className="w-full max-w-4xl space-y-6 text-center relative z-10">
@@ -43,17 +43,17 @@ export function Hero({
         <div className="flex items-center justify-center gap-2">
           <div
             className="h-[2px] w-6 rounded-full"
-            style={{ backgroundColor: "#c68dff" }}
+            style={{ backgroundColor: "#B49BC4" }}
           ></div>
           <span
             className="text-sm font-semibold tracking-wider uppercase"
-            style={{ color: "#c68dff" }}
+            style={{ color: "#B49BC4" }}
           >
             Tasks Made Simple
           </span>
           <div
             className="h-[2px] w-6 rounded-full"
-            style={{ backgroundColor: "#c68dff" }}
+            style={{ backgroundColor: "#B49BC4" }}
           ></div>
         </div>
 
@@ -61,7 +61,7 @@ export function Hero({
           <h1
             className="text-5xl sm:text-6xl lg:text-8xl font-semibold leading-tight tracking-tighter"
             style={{
-              color: "#323843",
+              color: "#4A4458",
               fontFamily: "'Space Grotesk', sans-serif",
             }}
           >
@@ -71,7 +71,7 @@ export function Hero({
           {/* Subheadline with muted slate */}
           <p
             className="text-lg sm:text-xl max-w-2xl mx-auto leading-relaxed font-light"
-            style={{ color: "#323843", opacity: 0.7 }}
+            style={{ color: "#4A4458", opacity: 0.7 }}
           >
             {subheadline}
           </p>
@@ -89,7 +89,7 @@ export function Hero({
           <Link
             href={secondaryCtaHref}
             className="group flex items-center gap-2 font-semibold transition-all text-base"
-            style={{ color: "#323843" }}
+            style={{ color: "#4A4458" }}
           >
             <Button variant="secondary">{secondaryCtaText}</Button>
           </Link>
@@ -98,7 +98,7 @@ export function Hero({
         <div className="pt-12 mx-auto max-w-4xl">
           <div
             className="relative rounded-3xl shadow-2xl overflow-hidden border-4"
-            style={{ borderColor: "#c68dff", backgroundColor: "#ffffff" }}
+            style={{ borderColor: "#B49BC4", backgroundColor: "#F5EDE4" }}
           >
             {/* Mock app UI */}
             <div className="p-8 space-y-6">
@@ -109,11 +109,11 @@ export function Hero({
                 ></div>
                 <div
                   className="w-3 h-3 rounded-full"
-                  style={{ backgroundColor: "#cbe857" }}
+                  style={{ backgroundColor: "#F4C542" }}
                 ></div>
                 <div
                   className="w-3 h-3 rounded-full"
-                  style={{ backgroundColor: "#ffd43b", opacity: 0.3 }}
+                  style={{ backgroundColor: "#F4A460", opacity: 0.3 }}
                 ></div>
               </div>
 
@@ -121,31 +121,31 @@ export function Hero({
                 <div className="flex items-center gap-3">
                   <div
                     className="w-5 h-5 rounded-lg flex-shrink-0"
-                    style={{ backgroundColor: "#cbe857" }}
+                    style={{ backgroundColor: "#F4C542" }}
                   ></div>
                   <div
                     className="h-3 rounded-full flex-grow"
-                    style={{ backgroundColor: "#f5f5f5" }}
+                    style={{ backgroundColor: "#F5EDE4" }}
                   ></div>
                 </div>
                 <div className="flex items-center gap-3">
                   <div
                     className="w-5 h-5 rounded-lg flex-shrink-0"
-                    style={{ backgroundColor: "#c68dff", opacity: 0.5 }}
+                    style={{ backgroundColor: "#B49BC4", opacity: 0.5 }}
                   ></div>
                   <div
                     className="h-3 rounded-full flex-grow"
-                    style={{ backgroundColor: "#f5f5f5" }}
+                    style={{ backgroundColor: "#F5EDE4" }}
                   ></div>
                 </div>
                 <div className="flex items-center gap-3">
                   <div
                     className="w-5 h-5 rounded-lg flex-shrink-0"
-                    style={{ backgroundColor: "#323843", opacity: 0.2 }}
+                    style={{ backgroundColor: "#4A4458", opacity: 0.2 }}
                   ></div>
                   <div
                     className="h-3 rounded-full flex-grow"
-                    style={{ backgroundColor: "#f5f5f5" }}
+                    style={{ backgroundColor: "#F5EDE4" }}
                   ></div>
                 </div>
               </div>

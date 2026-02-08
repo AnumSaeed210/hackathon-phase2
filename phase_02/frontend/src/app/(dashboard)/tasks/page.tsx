@@ -104,13 +104,13 @@ export default function TasksPage() {
           <h1
             className="text-4xl font-bold"
             style={{
-              color: "#323843",
+              color: "#4A4458",
               fontFamily: "'Space Grotesk', sans-serif",
             }}
           >
             Tasks
           </h1>
-          <p className="mt-2 text-gray-600">Organize and track your work</p>
+          <p className="mt-2 text-text-secondary">Organize and track your work</p>
         </div>
         <Button
           onClick={handleCreateClick}
@@ -126,33 +126,33 @@ export default function TasksPage() {
       {/* Statistics */}
       {tasks.length > 0 && (
         <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 md:grid-cols-3">
-          <div className="rounded-lg border border-violet-light bg-white p-4">
+          <div className="rounded-lg border border-cards bg-background p-4">
             <div className="flex items-center gap-2">
-              <Circle size={20} className="text-gray-400" />
+              <Circle size={20} className="text-text-secondary" />
               <div>
-                <p className="text-sm text-gray-600">Active</p>
-                <p className="text-2xl font-bold text-gray-900">
+                <p className="text-sm text-text-secondary">Active</p>
+                <p className="text-2xl font-bold text-text-primary">
                   {incompleteCount}
                 </p>
               </div>
             </div>
           </div>
-          <div className="rounded-lg border border-violet-light bg-white p-4">
+          <div className="rounded-lg border border-cards bg-background p-4">
             <div className="flex items-center gap-2">
-              <CheckCircle2 size={20} className="text-green-600" />
+              <CheckCircle2 size={20} className="text-success" />
               <div>
-                <p className="text-sm text-gray-600">Completed</p>
-                <p className="text-2xl font-bold text-gray-900">
+                <p className="text-sm text-text-secondary">Completed</p>
+                <p className="text-2xl font-bold text-text-primary">
                   {completedCount}
                 </p>
               </div>
             </div>
           </div>
           {tasks.length > 0 && (
-            <div className="rounded-lg border border-violet-light bg-white p-4">
+            <div className="rounded-lg border border-cards bg-background p-4">
               <div>
-                <p className="text-sm text-gray-600">Progress</p>
-                <p className="text-2xl font-bold text-gray-900">
+                <p className="text-sm text-text-secondary">Progress</p>
+                <p className="text-2xl font-bold text-text-primary">
                   {Math.round((completedCount / tasks.length) * 100)}%
                 </p>
               </div>

@@ -103,23 +103,23 @@ export function Features({
       {/* // <section className="relative bg-gradient-to-br from-slate-dark via-slate to-slate-dark py-20 sm:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden"> */}
 
       {/* LIGHT SECTION: The Promise of Simplicity */}
-      <section className="relative bg-slate py-20 sm:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      <section className="relative bg-cards py-20 sm:py-32 px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Subtle background elements */}
-        <div className="absolute top-0 right-0 w-96 h-96 bg-violet/3 rounded-full -mr-48 -mt-48 blur-3xl"></div>
+        <div className="absolute top-0 right-0 w-96 h-96 bg-primary/3 rounded-full -mr-48 -mt-48 blur-3xl"></div>
 
         <div className="w-full max-w-6xl mx-auto relative z-10">
           {/* Section Header */}
           <div className="text-center max-w-3xl mx-auto mb-16 sm:mb-20">
             <h2
-              className="text-4xl sm:text-5xl font-medium mb-6 tracking-tight text-white"
+              className="text-4xl sm:text-5xl font-medium mb-6 tracking-tight text-text-primary"
               style={{
-                color: "#ffffff",
+                color: "#4A4458",
                 fontFamily: "'Space Grotesk', sans-serif",
               }}
             >
               The Promise of Simplicity
             </h2>
-            <p className="text-lg font-light leading-relaxed text-slate-300">
+            <p className="text-lg font-light leading-relaxed text-text-secondary">
               Three steps to your most productive self
             </p>
           </div>
@@ -129,7 +129,7 @@ export function Features({
             {valueProps.map((prop, index) => (
               <div key={index} className="group relative text-center">
                 {/* Number badge */}
-                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-violet-light to-violet-dark text-white font-bold text-2xl mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
+                <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-gradient-to-br from-primary to-secondary text-white font-bold text-2xl mb-6 group-hover:scale-110 transition-transform duration-300 shadow-lg">
                   {prop.number}
                 </div>
 
@@ -137,19 +137,19 @@ export function Features({
                 <h3
                   className="text-2xl font-light mb-4"
                   style={{
-                    color: "#ffffff",
+                    color: "#4A4458",
                     fontFamily: "'Space Grotesk', sans-serif",
                   }}
                 >
                   {prop.title}
                 </h3>
 
-                <p className="text-slate-300 leading-relaxed">
+                <p className="text-text-secondary leading-relaxed">
                   {prop.description}
                 </p>
 
                 {/* Optional: bottom accent line */}
-                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1 w-0 bg-gradient-to-r from-transparent via-violet to-transparent group-hover:w-full transition-all duration-500 rounded-full"></div>
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 h-1 w-0 bg-gradient-to-r from-transparent via-primary to-transparent group-hover:w-full transition-all duration-500 rounded-full"></div>
               </div>
             ))}
           </div>

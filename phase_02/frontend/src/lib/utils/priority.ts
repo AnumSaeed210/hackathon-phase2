@@ -16,13 +16,13 @@ export type PriorityLevel = "low" | "medium" | "high";
 export function getPriorityColor(priority?: string): string {
   switch (priority?.toLowerCase()) {
     case "high":
-      return "oklch(70.4% 0.191 22.216)"; // Red
+      return "#B49BC4"; // Soft Purple
     case "medium":
-      return "oklch(82.8% 0.189 84.429)"; // Yellow
+      return "#F4A460"; // Peach/Coral
     case "low":
-      return "oklch(76.5% 0.177 163.223)"; // Green
+      return "#F4C542"; // Yellow
     default:
-      return "oklch(82.8% 0.189 84.429)"; // Default to medium (yellow)
+      return "#F4A460"; // Default to medium (Peach/Coral)
   }
 }
 

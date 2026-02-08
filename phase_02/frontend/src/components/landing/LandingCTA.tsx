@@ -23,14 +23,14 @@ export function LandingCTA({
   headline = "Ready to reclaim your",
   headlineHighlight = "time and find focus?",
   description = "Join 50,000+ high-achievers who have abandoned traditional planners.",
-  primaryCtaText = "Try Taskie for free",
+  primaryCtaText = "Try Notely for free",
   primaryCtaHref = "/signup",
   trustBadgeText = "Join 50,000+ users achieving more",
   freeText = "No credit card required",
 }: LandingCTAProps) {
   return (
     <section className="relative py-24 px-4 sm:px-6 lg:px-8">
-      <div className="w-full max-w-7xl mx-auto bg-gradient-to-br from-violet to-violet-dark rounded-2xl lg:rounded-3xl py-20 sm:py-18 px-6 sm:px-8 lg:px-12 relative overflow-hidden">
+      <div className="w-full max-w-7xl mx-auto bg-gradient-to-br from-primary to-secondary rounded-2xl lg:rounded-3xl py-20 sm:py-18 px-6 sm:px-8 lg:px-12 relative overflow-hidden">
         <div className="w-full max-w-3xl mx-auto text-center relative z-10">
           {/* Headline with highlight */}
           <h2
@@ -56,7 +56,7 @@ export function LandingCTA({
               <Button
                 variant="accent"
                 size="lg"
-                className="px-10 py-4 text-lg font-bold shadow-xl hover:shadow-2xl bg-lime text-slate hover:bg-lime/90"
+                className="px-10 py-4 text-lg font-bold shadow-xl hover:shadow-2xl bg-highlight text-text-primary hover:bg-highlight/90"
               >
                 {primaryCtaText}
               </Button>

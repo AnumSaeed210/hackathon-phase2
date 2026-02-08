@@ -21,27 +21,43 @@ const config: Config = {
         ],
       },
       colors: {
-        // Design Guide Colors (from design-guide.md)
-        slate: {
-          DEFAULT: "#323843", // Midnight Slate
-          light: "#3d444f",
-          dark: "#252a31",
+        // Soft Pastel Minimalist Theme Colors
+        background: {
+          DEFAULT: "#F5EDE4", // Warm beige/cream
         },
-        violet: {
-          DEFAULT: "#c68dff", // Focus Violet
-          light: "#d9a5ff",
-          dark: "#b373e6",
+        sidebar: {
+          DEFAULT: "#E8DCD3", // Light tan/peach
         },
-        lime: {
-          DEFAULT: "#cbe857", // Momentum Lime
-          dark: "#b3d946",
+        cards: {
+          DEFAULT: "#C5B5C9", // Muted purple/mauve
         },
-        white: "#f5f5f5", // Paper White
+        primary: {
+          DEFAULT: "#B49BC4", // Soft Purple
+          light: "#C9BFD9",
+          dark: "#9F87AF",
+        },
+        secondary: {
+          DEFAULT: "#F4A460", // Peach/Coral
+          light: "#F6B882",
+          dark: "#E09459",
+        },
+        highlight: {
+          DEFAULT: "#F4C542", // Yellow
+          light: "#F6CE63",
+          dark: "#DDBE3C",
+        },
+
+        // Text colors
+        text: {
+          primary: "#4A4458", // Dark charcoal
+          secondary: "#6B5D73",
+          tertiary: "#5B4E7C",
+        },
 
         // Semantic colors
         error: "#ff6b6b",
         errorLight: "#ff8c8c",
-        warning: "#ffd43b",
+        warning: "#F4C542",
         success: "#cbe857",
       },
       spacing: {

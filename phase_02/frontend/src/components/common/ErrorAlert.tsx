@@ -15,7 +15,7 @@ export function ErrorAlert({ message, onDismiss, title }: ErrorAlertProps) {
   if (!message) return null
 
   return (
-    <div className="rounded-lg bg-white p-4 border border-error/20">
+    <div className="rounded-lg bg-background p-4 border border-error/20">
       <div className="flex gap-3">
         <div className="flex-shrink-0">
           <svg className="h-5 w-5 text-error" viewBox="0 0 20 20" fill="currentColor">

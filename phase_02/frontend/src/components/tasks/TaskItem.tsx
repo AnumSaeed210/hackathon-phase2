@@ -63,8 +63,8 @@ export function TaskItem({
     <div
       className={`group relative rounded-xl border transition-all duration-200 ${
         task.completed
-          ? "border-gray-200 bg-gray-50 hover:bg-gray-100"
-          : "border-gray-200 bg-white hover:border-gray-300 hover:shadow-md"
+          ? "border-cards bg-background/50 hover:bg-sidebar"
+          : "border-cards bg-background hover:border-primary/30 hover:shadow-md"
       }`}
     >
       <div className="flex items-start gap-4 p-4">
@@ -84,7 +84,7 @@ export function TaskItem({
           <div className="flex flex-wrap items-start gap-2 sm:items-center">
             <h3
               className={`text-base font-semibold transition-colors ${
-                task.completed ? "text-gray-400 line-through" : "text-gray-900"
+                task.completed ? "text-text-tertiary line-through" : "text-text-primary"
               }`}
             >
               {task.title}
@@ -101,14 +101,14 @@ export function TaskItem({
           {task.description && (
             <p
               className={`mt-2 text-sm leading-relaxed transition-colors ${
-                task.completed ? "text-gray-400" : "text-gray-600"
+                task.completed ? "text-text-tertiary" : "text-text-secondary"
               }`}
             >
               {task.description}
             </p>
           )}
 
-          <p className="mt-3 text-xs text-gray-500">
+          <p className="mt-3 text-xs text-text-tertiary">
             Created {formatRelativeTime(task.createdAt)}
           </p>
         </div>
@@ -119,7 +119,7 @@ export function TaskItem({
             <button
               onClick={() => onEdit(task.id)}
               disabled={isLoading || isDeleting}
-              className="rounded-lg p-2 text-gray-500 hover:bg-blue-50 hover:text-blue-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+              className="rounded-lg p-2 text-text-secondary hover:bg-sidebar hover:text-primary transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
               title="Edit task"
               aria-label="Edit task"
             >
@@ -130,11 +130,11 @@ export function TaskItem({
           {onDelete && (
             <>
               {showDeleteConfirm ? (
-                <div className="absolute right-4 top-16 z-20 flex gap-1 rounded-lg border border-red-200 bg-white p-2 shadow-lg">
+                <div className="absolute right-4 top-16 z-20 flex gap-1 rounded-lg border border-error bg-background p-2 shadow-lg">
                   <button
                     onClick={handleDelete}
                     disabled={isDeleting}
-                    className="flex items-center gap-1 rounded px-2 py-1 text-sm font-medium text-red-600 hover:bg-red-50 transition-colors disabled:opacity-50"
+                    className="flex items-center gap-1 rounded px-2 py-1 text-sm font-medium text-error hover:bg-error/10 transition-colors disabled:opacity-50"
                     title="Confirm delete"
                   >
                     <Check size={16} />
@@ -142,7 +142,7 @@ export function TaskItem({
                   </button>
                   <button
                     onClick={() => setShowDeleteConfirm(false)}
-                    className="flex items-center gap-1 rounded px-2 py-1 text-sm text-gray-600 hover:bg-gray-100 transition-colors"
+                    className="flex items-center gap-1 rounded px-2 py-1 text-sm text-text-secondary hover:bg-sidebar transition-colors"
                     title="Cancel delete"
                   >
                     <X size={16} />
@@ -152,7 +152,7 @@ export function TaskItem({
                 <button
                   onClick={() => setShowDeleteConfirm(true)}
                   disabled={isLoading || isDeleting}
-                  className="rounded-lg p-2 text-gray-500 hover:bg-red-50 hover:text-red-600 transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
+                  className="rounded-lg p-2 text-text-secondary hover:bg-error/10 hover:text-error transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
                   title="Delete task"
                   aria-label="Delete task"
                 >

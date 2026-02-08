@@ -26,7 +26,7 @@ export function Input({
       {label && (
         <label
           htmlFor={inputId}
-          className="block text-sm font-medium text-slate-light"
+          className="block text-sm font-medium text-text-secondary"
         >
           {label}
           {props.required && <span className="text-error"> *</span>}
@@ -37,9 +37,9 @@ export function Input({
         id={inputId}
         className={`
           w-full px-4 py-2 border rounded-lg min-h-11
-           text-slate placeholder:text-slate-light/40
-          border-slate/20
-          focus:outline-none focus:border-blue-500 focus:ring-1 focus:ring-blue-500
+           text-text-primary placeholder:text-text-secondary/40
+          border-cards
+          focus:outline-none focus:border-primary focus:ring-1 focus:ring-primary
           transition-all
           ${error ? "border-error bg-error/10" : ""}
           ${className}
@@ -49,7 +49,7 @@ export function Input({
 
       {error && <p className="text-sm text-error">{error}</p>}
       {helpText && !error && (
-        <p className="text-sm text-slate-light">{helpText}</p>
+        <p className="text-sm text-text-secondary">{helpText}</p>
       )}
     </div>
   );

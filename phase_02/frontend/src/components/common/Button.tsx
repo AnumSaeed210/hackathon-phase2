@@ -35,10 +35,10 @@ export function Button({
 
   const variantStyles = {
     primary:
-      "bg-violet text-white hover:bg-violet-dark rounded-md px-4 py-3 gap-2",
-    secondary: "bg-slate-light hover:bg-slate-dark rounded-md px-4 py-3 gap-2",
-    secondary2: "bg-violet-dark hover:bg-violet rounded-md px-4 py-3 gap-2",
-    accent: "bg-lime-dark hover:bg-lime rounded-md px-4 py-3 gap-2",
+      "bg-primary text-white hover:bg-primary-dark rounded-md px-4 py-3 gap-2",
+    secondary: "bg-sidebar text-text-primary hover:bg-[#D6C8BB] rounded-md px-4 py-3 gap-2",
+    secondary2: "bg-primary-dark hover:bg-primary rounded-md px-4 py-3 gap-2",
+    accent: "bg-highlight text-white hover:bg-highlight-dark rounded-md px-4 py-3 gap-2",
     danger:
       "bg-error text-white hover:bg-errorLight rounded-md px-4 py-2 gap-2",
   };
