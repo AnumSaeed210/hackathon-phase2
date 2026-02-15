@@ -1,0 +1,20 @@
+# Development override for docker-compose
+version: '3.8'
+
+services:
+  backend:
+    # Mount source code for live reloading during development
+    volumes:
+      - ./backend:/app
+    # Enable auto-reload for development
+    command: uvicorn main:app --host 0.0.0.0 --port 8000 --reload
+    
+  frontend:
+    # Mount source code for live reloading during development
+    volumes:
+      - ./frontend:/app
+      - /app/node_modules # Exclude node_modules from sync
+    # Use development server instead of production
+    command: npm run dev
+    ports:
+      - "3000:3000"
